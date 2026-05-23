@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nunca tuve tanto</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#0f0f0f;
+      color:white;
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:30px;
+    }
+
+    .container{
+      max-width:700px;
+      width:100%;
+      text-align:center;
+      animation:fade 1.5s ease;
+    }
+
+    .collage{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:10px;
+      margin-bottom:30px;
+    }
+
+    .collage img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+      border-radius:18px;
+      transition:0.3s;
+    }
+
+    .collage img:hover{
+      transform:scale(1.02);
+    }
+
+    h1{
+      font-size:42px;
+      margin-bottom:20px;
+      font-weight:300;
+      letter-spacing:2px;
+    }
+
+    .text{
+      font-size:18px;
+      line-height:1.8;
+      color:#d4d4d4;
+      margin-bottom:35px;
+    }
+
+    .button{
+      display:inline-block;
+      padding:15px 30px;
+      border-radius:50px;
+      text-decoration:none;
+      color:white;
+      border:1px solid white;
+      transition:0.3s;
+      font-size:16px;
+    }
+
+    .button:hover{
+      background:white;
+      color:black;
+    }
+
+    .footer{
+      margin-top:40px;
+      color:#777;
+      font-size:14px;
+    }
+
+    @keyframes fade{
+      from{
+        opacity:0;
+        transform:translateY(20px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    @media(max-width:700px){
+      .collage{
+        grid-template-columns:1fr;
+      }
+
+      .collage img{
+        height:300px;
+      }
+
+      h1{
+        font-size:34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="collage">
+      <img src="foto1.jpg" alt="">
+      <img src="foto2.jpg" alt="">
+      <img src="foto3.jpg" alt="">
+    </div>
+
+    <h1>Nunca tuve tanto ♡</h1>
+
+    <div class="text">
+      No sé en qué momento empezaste a volverte tan importante para mí, 
+      pero sí sé que estos momentos contigo se han vuelto de mis favoritos.
+      <br><br>
+      Y supongo que por eso esta canción siempre me recuerda a ti.
+    </div>
+
+    <a class="button" 
+       href="https://open.spotify.com/" 
+       target="_blank">
+       Escuchar nuestra canción ♫
+    </a>
+
+    <div class="footer">
+      Hecho por Fabian
+    </div>
+
+  </div>
+
+</body>
+</html>
