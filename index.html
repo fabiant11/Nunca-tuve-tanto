@@ -1,147 +1,253 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nunca tuve tanto</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+<title>Nunca tuve tanto ♡</title>
 
-    body{
-      background:#0f0f0f;
-      color:white;
-      min-height:100vh;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      padding:30px;
-    }
+<style>
 
-    .container{
-      max-width:700px;
-      width:100%;
-      text-align:center;
-      animation:fade 1.5s ease;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:Arial, Helvetica, sans-serif;
+}
 
-    .collage{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:10px;
-      margin-bottom:30px;
-    }
+body{
+background:#0f0f0f;
+color:white;
+line-height:1.7;
+}
 
-    .collage img{
-      width:100%;
-      height:260px;
-      object-fit:cover;
-      border-radius:18px;
-      transition:0.3s;
-    }
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+padding:15px;
+display:flex;
+justify-content:center;
+gap:20px;
+z-index:1000;
+}
 
-    .collage img:hover{
-      transform:scale(1.02);
-    }
+nav a{
+color:white;
+text-decoration:none;
+font-size:14px;
+}
 
-    h1{
-      font-size:42px;
-      margin-bottom:20px;
-      font-weight:300;
-      letter-spacing:2px;
-    }
+header{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:100px 20px 50px;
+text-align:center;
+}
 
-    .text{
-      font-size:18px;
-      line-height:1.8;
-      color:#d4d4d4;
-      margin-bottom:35px;
-    }
+h1{
+font-size:50px;
+font-weight:300;
+margin-bottom:20px;
+}
 
-    .button{
-      display:inline-block;
-      padding:15px 30px;
-      border-radius:50px;
-      text-decoration:none;
-      color:white;
-      border:1px solid white;
-      transition:0.3s;
-      font-size:16px;
-    }
+.subtitle{
+max-width:700px;
+color:#cfcfcf;
+margin-bottom:40px;
+}
 
-    .button:hover{
-      background:white;
-      color:black;
-    }
+.collage{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+width:100%;
+max-width:1000px;
+}
 
-    .footer{
-      margin-top:40px;
-      color:#777;
-      font-size:14px;
-    }
+.collage img{
+width:100%;
+height:350px;
+object-fit:contain;
+background:#1a1a1a;
+border-radius:20px;
+padding:5px;
+}
 
-    @keyframes fade{
-      from{
-        opacity:0;
-        transform:translateY(20px);
-      }
-      to{
-        opacity:1;
-        transform:translateY(0);
-      }
-    }
+section{
+padding:100px 20px;
+max-width:1000px;
+margin:auto;
+}
 
-    @media(max-width:700px){
-      .collage{
-        grid-template-columns:1fr;
-      }
+h2{
+font-size:35px;
+font-weight:300;
+margin-bottom:40px;
+text-align:center;
+}
 
-      .collage img{
-        height:300px;
-      }
+.card{
+background:#171717;
+padding:25px;
+border-radius:20px;
+margin-bottom:30px;
+}
 
-      h1{
-        font-size:34px;
-      }
-    }
-  </style>
+.card img{
+width:100%;
+border-radius:15px;
+margin-top:20px;
+}
+
+.button{
+display:inline-block;
+margin-top:20px;
+padding:15px 30px;
+border-radius:50px;
+border:1px solid white;
+color:white;
+text-decoration:none;
+}
+
+.button:hover{
+background:white;
+color:black;
+}
+
+footer{
+text-align:center;
+padding:50px 20px;
+color:#777;
+}
+
+</style>
 </head>
 
 <body>
 
-  <div class="container">
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#playlist">Playlist</a>
+<a href="#momentos">Momentos</a>
+<a href="#fechas">Fechas</a>
+<a href="#cumple">Cumpleaños</a>
+</nav>
 
-    <div class="collage">
-      <img src="IMG-20260320-WA0030.jpg" alt="">
-      <img src="IMG-20260408-WA0004.jpg" alt="">
-      <img src="IMG-20260425-WA0008.jpg" alt="">
-    </div>
+<header id="inicio">
 
-    <h1>Nunca tuve tanto ♡</h1>
+<h1>Nunca tuve tanto ♡</h1>
 
-    <div class="text">
-      No sé en qué momento empezaste a volverte tan importante para mí, 
-      pero sí sé que estos momentos contigo se han vuelto de mis favoritos.
-      <br><br>
-      Y supongo que por eso esta canción siempre me recuerda a ti.
-    </div>
+<p class="subtitle">
+No sé en qué momento empezaste a volverte tan importante para mí,
+pero sí sé que estos momentos contigo se han vuelto de mis favoritos.
+</p>
 
-    <a class="button" 
-       href="https://open.spotify.com/track/4WQaXkwA43WaPBuAZdtoe1?si=Vq30uiJwQoi3ewXCJGc36g" 
-       target="_blank">
-       Escuchar nuestra canción ♫
-    </a>
+<div class="collage">
 
-    <div class="footer">
-      Hecho por Fabian
-    </div>
+<img src="IMG-20260320-WA0030.jpg">
+<img src="IMG-20260408-WA0004.jpg">
+<img src="IMG-20260425-WA0026(1).jpg">
 
-  </div>
+</div>
+
+</header>
+
+<section id="playlist">
+
+<h2>Nuestra playlist 🎵</h2>
+
+<div class="card">
+
+<p>
+Canciones que inevitablemente me recuerdan a ti.
+</p>
+
+<a class="button"
+href="https://open.spotify.com/playlist/0fGukBXpAO9hATzaZgxFHQ?si=s8KndvDRSGqj6Z28Wdoxnw&pi=jjOK6cVeQXi4X"
+target="_blank">
+
+Escuchar nuestras canciones ♫
+
+</a>
+
+</div>
+
+</section>
+
+
+<section id="momentos">
+
+<h2>Momentos ✨</h2>
+
+<div class="card">
+
+<h3>Uno de mis días favoritos contigo</h3>
+
+<img src="IM">
+
+<p>
+Me gusta esta foto porque resume exactamente
+cómo se sienten las cosas cuando estoy contigo.
+</p>
+
+</div>
+
+</section>
+
+<section id="fechas">
+
+<h2>Fechas importantes 📅</h2>
+
+<div class="card">
+<h3>Primera salida ✨</h3>
+<pA>21/02/2026</p>
+</div>
+
+</section>
+
+<section id="cumple">
+
+<h2>Nuestros cumpleaños 🎂</h2>
+
+<div class="card">
+
+<h3>2026 ✨</h3>
+
+<p>
+Tu primer cumpleaños conmigo.
+</p>
+
+<img src="AQUI_TU_FOTO.jpg">
+
+<p>
+Todavía recuerdo lo feliz que me hizo ese día.
+</p>
+
+<br><br>
+
+<img src="AQUI_SU_FOTO.jpg">
+
+<p>
+Y supongo que esta también terminó
+siendo una de mis fotos favoritas.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+Hecho por Fabian ♡
+
+</footer>
 
 </body>
 </html>
