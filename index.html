@@ -7,7 +7,29 @@
 <title>Nunca tuve tanto ♡</title>
 
 <style>
+  
+.miCarrusel{
+    width:100%;
+    max-width:700px;
+    margin:auto;
+}
 
+.miCarrusel img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+    border-radius:22px;
+}
+
+.swiper-pagination-bullet{
+    background:white;
+    opacity:.5;
+}
+
+.swiper-pagination-bullet-active{
+    opacity:1;
+}
+  
 *{
 margin:0;
 padding:0;
@@ -154,6 +176,9 @@ transition:.3s;
 .floating-letter:hover{
 transform:scale(1.1);
 }
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
 </style>
 </head>
 
@@ -182,11 +207,25 @@ No sé en qué momento empezaste a volverte tan importante para mí,
 pero sí sé que estos momentos contigo se han vuelto de mis favoritos.
 </p>
 
-<div class="collage">
+<div class="swiper miCarrusel">
 
-<img src="IMG-20260320-WA0030.jpg">
-<img src="IMG-20260408-WA0004.jpg">
-<img src="IMG-20260425-WA0008.jpg">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <img src="IMG-20260320-WA0030.jpg">
+        </div>
+
+        <div class="swiper-slide">
+            <img src="IMG-20260408-WA0004.jpg">
+        </div>
+
+        <div class="swiper-slide">
+            <img src="IMG-20260425-WA0008.jpg">
+        </div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
 
 </div>
 
@@ -344,6 +383,30 @@ Si alguna vez dudas de cuánto significas para mí, vuelve a este lugar.
 Hecho por Fabian 
 
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+<script>
+
+const swiper = new Swiper('.miCarrusel',{
+
+    loop:true,
+
+    autoplay:{
+        delay:4500,
+        disableOnInteraction:false,
+    },
+
+    pagination:{
+        el:'.swiper-pagination',
+        clickable:true,
+    },
+
+    effect:'slide',
+
+    speed:700,
+
+});
+
+</script>
 </body>
 </html>
