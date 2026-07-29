@@ -3,105 +3,260 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌿 El Terrario</title>
-    <link rel="stylesheet" href="../style.css">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🌿 El Terrario</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+    line-height:1.8;
+}
+
+/* Barra superior */
+
+nav{
+    position:sticky;
+    top:0;
+    background:rgba(15,15,15,.95);
+    backdrop-filter:blur(10px);
+    padding:20px;
+    text-align:center;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    transition:.3s;
+}
+
+nav a:hover{
+    opacity:.7;
+}
+
+/* Encabezado */
+
+header{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    padding:80px 20px 50px;
+}
+
+header h1{
+    font-size:48px;
+    font-weight:300;
+    margin-bottom:15px;
+}
+
+.fecha{
+    color:#a8a8a8;
+    margin-bottom:20px;
+}
+
+.frase{
+    max-width:700px;
+    margin:0 auto 40px;
+    color:#d4d4d4;
+    font-style:italic;
+    font-size:18px;
+}
+
+.principal{
+    width:100%;
+    border-radius:20px;
+    margin-top:20px;
+    box-shadow:0 10px 35px rgba(0,0,0,.35);
+}
+
+/* Secciones */
+
+section{
+    max-width:900px;
+    margin:auto;
+    padding:25px;
+}
+
+.card{
+    background:#171717;
+    padding:30px;
+    border-radius:20px;
+    margin-bottom:30px;
+}
+
+.card h2{
+    font-size:28px;
+    font-weight:300;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.card p{
+    color:#d5d5d5;
+    text-align:justify;
+}
+
+/* Galería */
+
+.galeria{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.galeria img,
+.galeria video{
+    width:100%;
+    border-radius:18px;
+}
+
+/* Frase final */
+
+.final{
+    text-align:center;
+    color:#cfcfcf;
+    font-style:italic;
+    margin:50px 0;
+}
+
+/* Botón */
+
+.button{
+    display:inline-block;
+    padding:15px 35px;
+    border-radius:50px;
+    border:1px solid white;
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.button:hover{
+    background:white;
+    color:black;
+}
+
+.navegacion{
+    text-align:center;
+    margin:50px 0 80px;
+}
+
+
+</style>
 
 </head>
 
 <body>
 
-    <div class="recuerdo">
-        <!-- Encabezado -->
+<nav>
 
-        <h1>🌿 El Terrario</h1>
-        <p class="fecha">Marzo 2026</p>
+<a href="../index.html#momentos">← Volver a Momentos</a>
 
-        <p class="frase">
-            "Hay conversaciones que parecen pequeñas, pero yo las guardo porque hablan de tus sueños."
-        </p>
+</nav>
 
-        <!-- Foto principal -->
+<header class="recuerdo-header">
 
-        <img src="../20260315_133447.jpg" class="principal">
+<h1>🌿 El Terrario</h1>
 
-        <!-- Historia -->
+<p class="fecha">
+Marzo de 2026
+</p>
 
-        <section>
+<p class="frase">
 
-            <h2>✨ Lo que recuerdo de ese día</h2>
+"Hay conversaciones que parecen pequeñas,
+pero yo las guardo porque hablan de tus sueños."
 
-            <p>
+</p>
 
-                ......
-                
-            </p>
+<img src="20260315_133447.jpg" class="principal">
 
-        </section>
+</header>
 
-        <!-- Galería -->
+<section>
 
-        <section>
+<div class="card">
 
-            <h2>📸 Galería</h2>
+<h2>✨ Lo que recuerdo de ese día</h2>
 
-            <div class="galeria">
+<p>
 
-                <img src="../img/terrario1.jpg">
+...
 
-                <img src="../img/terrario2.jpg">
+</p>
 
-                <img src="../img/terrario3.jpg">
+</div>
 
-            </div>
+<div class="card">
 
-        </section>
+<h2>📸 Galería</h2>
 
-        <!-- Enseñanza -->
+<div class="galeria">
 
-        <section>
+<img src="foto1">
 
-            <h2>❤️ Lo que ese día me enseñó</h2>
+<img src="foto2">
 
-            <p>
+<img src="gif">
 
-                 .....
-            </p>
+</div>
 
-        </section>
+</div>
 
-        <!-- Nunca te dije -->
+<div class="card">
 
-        <section>
+<h2>❤️ Lo que ese día me enseñó</h2>
 
-            <h2>💭 Un detalle que nunca te dije</h2>
+<p>
 
-            <p>
+...
 
-                ...
-                
-            </p>
+</p>
 
-        </section>
+</div>
 
-        <!-- Frase final -->
+<div class="card">
 
-        <div class="final">
+<h2>💭 Un detalle que nunca te dije</h2>
 
-            ❤️ Gracias por seguir escribiendo esta historia conmigo.
+<p>
 
-        </div>
+...
 
-        <!-- Navegación -->
+</p>
 
-        <div class="navegacion">
+</div>
 
-            <a href="../momentos.html">❤️ Volver a Momentos</a>
+<p class="cita-final">
 
-        </div>
+"Gracias por seguir escribiendo esta historia conmigo. ❤️"
 
-    </div>
+</p>
+
+<div class="navegacion">
+
+<a href="../index.html#momentos" class="button">
+
+❤️ Volver a Momentos
+
+</a>
+
+</div>
+
+</section>
 
 </body>
 
